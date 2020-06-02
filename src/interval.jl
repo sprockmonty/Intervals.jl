@@ -62,6 +62,12 @@ struct Interval{T} <: AbstractInterval{T}
         f, l, inc = if f ≤ l
             f, l, inc
         elseif l ≤ f
+            Base.depwarn(
+                "Constructing an `Interval(x, y, ...)` is where `x > y` is deprecated, " *
+                "use `Interval(y, x, ...)` instead." *
+                sprint(Base.show_backtrace, stacktrace()),
+                :Interval,
+            )
             l, f, Inclusivity(last(inc), first(inc))
         else
             throw(ArgumentError("Unable to determine an ordering between: $f and $l"))

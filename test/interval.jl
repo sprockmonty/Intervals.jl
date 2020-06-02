@@ -29,8 +29,6 @@
                 Interval{typeof(a)}(a, b, Inclusivity(true, false))
             @test Interval(a, b, Inclusivity(true, false)) ==
                 Interval{typeof(a)}(a, b, Inclusivity(true, false))
-            @test Interval(b, a, Inclusivity(true, false)) ==
-                Interval{typeof(a)}(a, b, Inclusivity(false, true))
         end
 
         # The three-argument Interval constructor can generate a StackOverflow if we aren't

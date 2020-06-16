@@ -22,10 +22,12 @@ const INTERVAL_TYPES = [Interval, AnchoredInterval{Ending}, AnchoredInterval{Beg
             [
                 Interval{Closed, Closed}(1, 2),
                 Interval{Closed, Closed}(-Inf, 2),
+                Interval{Closed, Closed}(-∞, 2),
             ],
             [
                 Interval{Closed, Closed}(4, 5),
                 Interval{Closed, Closed}(4, Inf),
+                Interval{Closed, Closed}(4, ∞),
             ],
         )
 
@@ -73,10 +75,12 @@ const INTERVAL_TYPES = [Interval, AnchoredInterval{Ending}, AnchoredInterval{Beg
             [
                 Interval{Open, Open}(1, 3),
                 Interval{Open, Open}(-Inf, 3),
+                Interval{Open, Open}(-∞, 3),
             ],
             [
                 Interval{Open, Open}(3, 5),
                 Interval{Open, Open}(3, Inf),
+                Interval{Open, Open}(3, ∞),
             ],
         )
 
@@ -124,10 +128,12 @@ const INTERVAL_TYPES = [Interval, AnchoredInterval{Ending}, AnchoredInterval{Beg
             [
                 Interval{Open, Open}(1, 3),
                 Interval{Open, Open}(-Inf, 3),
+                Interval{Open, Open}(-∞, 3),
             ],
             [
                 Interval{Closed, Closed}(3, 5),
                 Interval{Closed, Closed}(3, Inf),
+                Interval{Closed, Closed}(3, ∞),
             ],
         )
 
@@ -175,10 +181,12 @@ const INTERVAL_TYPES = [Interval, AnchoredInterval{Ending}, AnchoredInterval{Beg
             [
                 Interval{Closed, Closed}(1, 3),
                 Interval{Closed, Closed}(-Inf, 3),
+                Interval{Closed, Closed}(-∞, 3),
             ],
             [
                 Interval{Open, Open}(3, 5),
                 Interval{Open, Open}(3, Inf),
+                Interval{Open, Open}(3, ∞),
             ],
         )
 
@@ -226,10 +234,12 @@ const INTERVAL_TYPES = [Interval, AnchoredInterval{Ending}, AnchoredInterval{Beg
             [
                 Interval{Closed, Closed}(1, 3),
                 Interval{Closed, Closed}(-Inf, 3),
+                Interval{Closed, Closed}(-∞, 3),
             ],
             [
                 Interval{Closed, Closed}(3, 5),
                 Interval{Closed, Closed}(3, Inf),
+                Interval{Closed, Closed}(3, ∞),
             ],
         )
 
@@ -277,10 +287,12 @@ const INTERVAL_TYPES = [Interval, AnchoredInterval{Ending}, AnchoredInterval{Beg
             [
                 Interval{Closed, Closed}(1, 4),
                 Interval{Closed, Closed}(-Inf, 4),
+                Interval{Closed, Closed}(-∞, 4),
             ],
             [
                 Interval{Closed, Closed}(2, 5),
                 Interval{Closed, Closed}(2, Inf),
+                Interval{Closed, Closed}(2, ∞),
             ],
         )
 
@@ -680,8 +692,11 @@ const INTERVAL_TYPES = [Interval, AnchoredInterval{Ending}, AnchoredInterval{Beg
             [
                 Interval{Closed, Closed}(1, 5),
                 Interval{Closed, Closed}(1, Inf),
+                Interval{Closed, Closed}(1, ∞),
                 Interval{Closed, Closed}(-Inf, 5),
+                Interval{Closed, Closed}(-∞, 5),
                 Interval{Closed, Closed}(-Inf, Inf),
+                Interval{Closed, Closed}(-∞, ∞),
             ],
         )
 

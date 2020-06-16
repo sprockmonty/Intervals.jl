@@ -1,5 +1,6 @@
 using Base.Iterators: product
 using Dates
+using Infinity
 using Intervals
 using Test
 using TimeZones

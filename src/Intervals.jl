@@ -1,6 +1,7 @@
 module Intervals
 
 using Dates
+using Infinity: ∞, isinf
 using Printf
 using RecipesBase
 using TimeZones
